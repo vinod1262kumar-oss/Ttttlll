@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Durva — food and planning assistant inside TruthLens">
+<title>Durva — TruthLens</title>
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header class="nav wrap">
+  <a class="brand" href="/"><span class="brand-mark">T</span><span>TruthLens</span></a>
+  <nav><a href="/">Home</a><a href="/app.html">Dashboard</a></nav>
+  <div class="nav-actions"><button id="logout" class="btn btn-dark">Sign out</button></div>
+</header>
+<main class="wrap" style="padding:55px 0 80px;max-width:900px">
+  <section class="result">
+    <p class="eyebrow">DURVA AI</p>
+    <h1 style="font-size:clamp(42px,7vw,72px);margin:8px 0">Ask <em>Durva.</em></h1>
+    <p class="sub">Food-label questions, balanced meal ideas, practical routines, and tasks. Durva is not a doctor or dietitian.</p>
+    <div id="chat" class="result" style="margin-top:28px;min-height:320px"></div>
+    <div style="display:flex;gap:10px;margin-top:14px">
+      <input id="message" class="input" style="flex:1" placeholder="Ask Durva anything about food or planning…">
+      <button id="send" class="btn btn-gold">Send →</button>
+    </div>
+    <div class="micro-trust" style="margin-top:16px"><span>✓ Balanced guidance</span><span>✓ Server-side Gemini</span><span>✓ Your account</span></div>
+  </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/js/durva.js" type="module"></script>
+</body>
+</html>

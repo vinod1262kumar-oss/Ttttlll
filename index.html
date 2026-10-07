@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="TruthLens scans packaged food and uncovers what's really inside.">
+  <title>TruthLens — Uncover What's Really Inside</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<div class="noise"></div>
+<header class="nav wrap">
+  <a class="brand" href="#top"><span class="brand-mark">T</span><span>TruthLens</span></a>
+  <nav><a href="#how">How it works</a><a href="#features">Features</a><a href="#durva">Durva AI</a><a href="#trust">Why TruthLens</a></nav>
+  <div class="nav-actions"><span id="quotaPill" class="quota">8 free scans</span><button id="authBtn" class="btn btn-dark">Get Started</button></div>
+</header>
+<main id="top">
+<section class="hero wrap">
+  <div class="hero-copy">
+    <p class="eyebrow">SCAN · ANALYZE · KNOW</p>
+    <h1>Uncover what's<br><em>really inside.</em></h1>
+    <p class="hero-text">Scan packaged food, read the nutrition label, check the health claims, and see the story behind the front-of-pack promises.</p>
+    <div class="hero-actions"><button id="scanHero" class="btn btn-gold">Scan a product <span>→</span></button><a href="#how" class="btn btn-ghost">See how it works</a></div>
+    <div class="micro-trust"><span>✓ Gemini label analysis</span><span>✓ Private account history</span><span>✓ 8 scans free</span></div>
+  </div>
+  <div class="hero-visual">
+    <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+    <div class="product-stage">
+      <div class="leaf leaf-1">✦</div><div class="leaf leaf-2">✦</div>
+      <div class="jar"><div class="jar-top">NUTRI</div><div class="jar-name">OAT<br>CRUNCH</div><div class="jar-tag">WHOLESOME<br>GRAINS</div></div>
+      <div class="scan-card"><div class="scan-head"><span class="dot"></span> TruthLens scan</div><strong>Claim vs reality</strong><div class="claim"><span>“Healthy choice”</span><b>Review</b></div><div class="mini-row"><span>Sugar</span><strong>18g</strong></div><div class="mini-row"><span>Sodium</span><strong>420mg</strong></div><div class="score"><span>52</span><small>/100</small></div></div>
+    </div>
+    <div class="floating-label label-a">Ingredient check <b>✓</b></div><div class="floating-label label-b">Nutrition facts <b>↗</b></div>
+  </div>
+</section>
+<section class="strip wrap"><div><b>01</b><span>Scan any packaged food</span></div><div><b>02</b><span>AI reads the label</span></div><div><b>03</b><span>Claims meet the facts</span></div><div><b>04</b><span>Save your real food report</span></div></section>
+<section id="how" class="section wrap"><div class="section-intro"><p class="eyebrow">HOW IT WORKS</p><h2>From package<br>to <em>clarity.</em></h2><p>No nutrition jargon. No marketing spin. Just a clearer way to understand what you're about to eat.</p></div><div class="how-grid"><article><span>01</span><h3>Capture the label</h3><p>Upload a clear photo of the nutrition panel or scan it from your device.</p></article><article><span>02</span><h3>Let TruthLens read it</h3><p>Gemini extracts the visible nutrition values without inventing missing numbers.</p></article><article><span>03</span><h3>See the real picture</h3><p>TruthLens compares key nutrients with practical thresholds and highlights the limiting factor.</p></article></div></section>
+<section id="features" class="section feature-section"><div class="wrap"><p class="eyebrow">ONE LENS. MORE CLARITY.</p><h2>Built around the questions<br>you actually have.</h2><div class="feature-grid"><div class="feature-card large"><span class="feature-icon">⌁</span><h3>Product scanner</h3><p>Turn a label photo into a readable nutrition breakdown and a clear verdict.</p><button id="scanFeature" class="text-link">Scan a product →</button></div><div class="feature-card"><span class="feature-icon">◈</span><h3>Claim check</h3><p>Put front-of-pack promises beside the facts you can verify.</p></div><div class="feature-card"><span class="feature-icon">▦</span><h3>Scan history</h3><p>Keep your previous scans tied to your account so you can compare later.</p></div><div class="feature-card"><span class="feature-icon">✦</span><h3>Shareable insight</h3><p>Get a compact result you can use when choosing between products.</p></div></div></div></section>
+<section id="durva" class="durva wrap"><div class="durva-copy"><p class="eyebrow">MEET DURVA</p><h2>Your food<br><em>thinking partner.</em></h2><p>Durva can explain a label, turn your goals into a practical meal plan, and create simple food-related tasks — all inside your account.</p><button id="durvaBtn" class="btn btn-dark">Talk to Durva <span>→</span></button></div><div class="chat-preview"><div class="chat-top"><span class="durva-dot"></span><b>Durva</b><small>Food & planning assistant</small></div><div class="bubble user">Can you help me plan simple balanced meals this week?</div><div class="bubble bot">Absolutely. I can build a practical plan around foods you like, your schedule, and the information you give me.</div><div class="chat-input">Ask Durva anything… <span>↑</span></div></div></section>
+<section id="trust" class="trust wrap"><div><p class="eyebrow">YOUR DATA, YOUR ACCOUNT</p><h2>Designed to be<br><em>private by default.</em></h2></div><div class="trust-list"><div><b>01</b><span>Gemini key stays on the server.</span></div><div><b>02</b><span>Your history is scoped to your Supabase account.</span></div><div><b>03</b><span>Eight scans are included in V1. Payments come later.</span></div></div></section>
+</main>
+<footer class="footer wrap"><div class="brand"><span class="brand-mark">T</span><span>TruthLens</span></div><span>Uncover what's really inside.</span><span>© 2026 TruthLens V1</span></footer>
+<div id="modal" class="modal hidden"><div class="modal-card"><button class="close" id="closeModal">×</button><div id="modalContent"></div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="/js/app.js" type="module"></script>
+</body></html>
