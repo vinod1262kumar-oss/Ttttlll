@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How It Works — TruthLens</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  
+  <header class="nav wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark">T</span>
+      <span>TruthLens</span>
+    </a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/features">Features</a>
+      <a href="/how-it-works">How it Works</a>
+      <a href="/about">About</a>
+      <a href="/blog">Blog</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="authBtn" class="btn btn-gold">Get Started</button>
+    </div>
+  </header>
+
+  <main class="wrap" style="padding: 80px 0 120px;">
+    <section class="section-intro">
+      <p class="eyebrow">HOW IT WORKS</p>
+      <h1>From Package to Clarity in 4 Steps</h1>
+    </section>
+
+    <div class="steps-grid" style="margin-top: 80px; max-width: 1000px; margin-left: auto; margin-right: auto;">
+      <div class="step step-detailed">
+        <div class="step-number">1</div>
+        <h3>📸 Scan the Label</h3>
+        <p>Take a clear photo of any packaged food's nutrition label. Our AI recognizes:</p>
+        <ul style="margin-top: 12px; color: var(--muted); font-size: 14px;">
+          <li>• Serving size & number of servings</li>
+          <li>• Calories and all nutrients</li>
+          <li>• Ingredients list</li>
+          <li>• Marketing claims & certifications</li>
+        </ul>
+      </div>
+
+      <div class="step step-detailed">
+        <div class="step-number">2</div>
+        <h3>🔍 AI Analyzes</h3>
+        <p>Gemini AI reads the image and extracts structured nutrition data. We normalize values and flag:</p>
+        <ul style="margin-top: 12px; color: var(--muted); font-size: 14px;">
+          <li>• Sugar vs. daily guidelines</li>
+          <li>• Sodium levels</li>
+          <li>• Trans fat & saturated fat</li>
+          <li>• Unusual ingredient patterns</li>
+        </ul>
+      </div>
+
+      <div class="step step-detailed">
+        <div class="step-number">3</div>
+        <h3>⚖️ Claims vs. Reality</h3>
+        <p>We compare what the package says to what the nutrition facts show:</p>
+        <ul style="margin-top: 12px; color: var(--muted); font-size: 14px;">
+          <li>• "No Added Sugar" but high carbs?</li>
+          <li>• "Natural" with 15 ingredients?</li>
+          <li>• "Wholesome" but high sodium?</li>
+          <li>• We flag inconsistencies</li>
+        </ul>
+      </div>
+
+      <div class="step step-detailed">
+        <div class="step-number">4</div>
+        <h3>✅ You Decide</h3>
+        <p>Get a clear verdict on whether this product fits your goals:</p>
+        <ul style="margin-top: 12px; color: var(--muted); font-size: 14px;">
+          <li>• Health status: Lower / Watch / High</li>
+          <li>• What nutrient is the main concern</li>
+          <li>• How many grams you can safely have</li>
+          <li>• Saved to your private history</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top: 100px; padding: 40px; background-color: var(--white); border: 1px solid var(--line); border-radius: 8px;">
+      <h3>What Happens Behind the Scenes?</h3>
+      <p style="color: var(--muted); margin-top: 16px; line-height: 1.8;">
+        When you submit an image, your phone sends it securely to our backend. We never store raw images—only the extracted nutrition data and your analysis. Gemini AI processes the image server-side, and the results are encrypted in Supabase. Your data is protected by Row Level Security (RLS), meaning only you can access your scans. We use Helmet for CSP, rate limiting to prevent abuse, and atomic database functions to lock your quota.
+      </p>
+    </div>
+
+    <div style="margin-top: 120px; text-align: center;">
+      <p class="eyebrow">READY?</p>
+      <h2 style="margin-bottom: 32px;">Scan Your First Product</h2>
+      <button class="btn btn-gold btn-large" id="startBtn">Get Started Now</button>
+    </div>
+  </main>
+
+  <footer class="footer wrap">
+    <div class="brand">
+      <span class="brand-mark">T</span>
+      <span>TruthLens</span>
+    </div>
+    <span>Uncover what's really inside.</span>
+    <span>© 2026 TruthLens V1</span>
+  </footer>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button class="close" id="closeModal">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="/js/app.js" type="module"></script>
+</body>
+</html>
