@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — TruthLens</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  
+  <header class="nav wrap">
+    <a class="brand" href="/">
+      <span class="brand-mark">T</span>
+      <span>TruthLens</span>
+    </a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/features">Features</a>
+      <a href="/how-it-works">How it Works</a>
+      <a href="/about">About</a>
+      <a href="/blog">Blog</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="authBtn" class="btn btn-gold">Get Started</button>
+    </div>
+  </header>
+
+  <main class="wrap" style="padding: 80px 0 120px;">
+    <section class="section-intro">
+      <p class="eyebrow">ABOUT US</p>
+      <h1>We're Building the Future of Food Clarity</h1>
+      <p class="sub">TruthLens exists because food marketing has become disconnected from reality. We're fixing that.</p>
+    </section>
+
+    <div style="margin-top: 80px; max-width: 800px; margin-left: auto; margin-right: auto;">
+      <h2>Our Mission</h2>
+      <p style="color: var(--muted); line-height: 1.8; margin: 20px 0; font-size: 18px;">
+        Most people can't read a nutrition label—or don't trust what they see. Marketing hides behind "natural," "healthy," and "wholesome" while nutrition facts stay buried in tiny print. We're here to close that gap.
+      </p>
+      <p style="color: var(--muted); line-height: 1.8; margin: 20px 0; font-size: 18px;">
+        TruthLens uses AI to instantly extract, decode, and verify every claim on a package. We show you what's really inside—sugar, salt, fat—in clear language. No jargon. No bias. Just facts.
+      </p>
+
+      <h2 style="margin-top: 60px;">Why This Matters</h2>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px;">
+        <div>
+          <h3>💡 Knowledge is Power</h3>
+          <p style="color: var(--muted); font-size: 14px; line-height: 1.6;">
+            You make 200+ food choices a week. Most happen without full information. We give you the data to make choices that align with your actual values.
+          </p>
+        </div>
+        <div>
+          <h3>🎯 Transparency Wins</h3>
+          <p style="color: var(--muted); font-size: 14px; line-height: 1.6;">
+            When consumers can see the truth, brands have to compete on quality, not just marketing. That's better for everyone.
+          </p>
+        </div>
+        <div>
+          <h3>🔐 Privacy First</h3>
+          <p style="color: var(--muted); font-size: 14px; line-height: 1.6;">
+            Your food data is personal. We don't sell it. We don't track you. Your scans stay in your private account.
+          </p>
+        </div>
+        <div>
+          <h3>🚀 Tech for Good</h3>
+          <p style="color: var(--muted); font-size: 14px; line-height: 1.6;">
+            We use the latest in AI (Gemini vision), cloud infrastructure (Supabase), and security (Helmet, RLS) responsibly.
+          </p>
+        </div>
+      </div>
+
+      <h2 style="margin-top: 60px;">What We're Building</h2>
+      <p style="color: var(--muted); line-height: 1.8; margin: 20px 0; font-size: 18px;">
+        V1 is the foundation: instant label scanning, nutrition analysis, and claim verification. But we're just getting started.
+      </p>
+      <p style="color: var(--muted); line-height: 1.8; margin: 20px 0; font-size: 18px;">
+        Future versions will include meal planning, dietary pattern tracking, and community insights—all built on the same privacy-first, transparency-driven philosophy.
+      </p>
+
+      <h2 style="margin-top: 60px;">Built With</h2>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px;">
+        <div style="padding: 20px; background-color: var(--cream); border-radius: 6px;">
+          <strong>Frontend</strong>
+          <p style="color: var(--muted); font-size: 14px; margin-top: 8px;">Vanilla JavaScript, responsive CSS, no frameworks (intentional)</p>
+        </div>
+        <div style="padding: 20px; background-color: var(--cream); border-radius: 6px;">
+          <strong>Backend</strong>
+          <p style="color: var(--muted); font-size: 14px; margin-top: 8px;">Node.js + Express, security-hardened</p>
+        </div>
+        <div style="padding: 20px; background-color: var(--cream); border-radius: 6px;">
+          <strong>Database</strong>
+          <p style="color: var(--muted); font-size: 14px; margin-top: 8px;">Supabase (PostgreSQL + Auth + RLS)</p>
+        </div>
+        <div style="padding: 20px; background-color: var(--cream); border-radius: 6px;">
+          <strong>AI</strong>
+          <p style="color: var(--muted); font-size: 14px; margin-top: 8px;">Google Gemini for vision & text</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 120px; text-align: center;">
+      <h2 style="margin-bottom: 32px;">Join Us</h2>
+      <p class="sub" style="margin-bottom: 40px;">Start your journey to food clarity today.</p>
+      <button class="btn btn-gold btn-large" id="startBtn">Create Your Account</button>
+    </div>
+  </main>
+
+  <footer class="footer wrap">
+    <div class="brand">
+      <span class="brand-mark">T</span>
+      <span>TruthLens</span>
+    </div>
+    <span>Uncover what's really inside.</span>
+    <span>© 2026 TruthLens V1</span>
+  </footer>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button class="close" id="closeModal">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="/js/app.js" type="module"></script>
+</body>
+</html>
